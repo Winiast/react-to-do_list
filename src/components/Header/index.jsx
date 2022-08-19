@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import Grid from "../Grid";
 import GridItem from "../GridItem";
 import * as C from "./styles";
 
@@ -8,8 +7,6 @@ function Header() {
   const [MultipleItemTodo, setMultipleItemTodo] = useState([]);
 
   const handleButtonClick = () => {
-    console.log(itemToDo);
-
     setMultipleItemTodo((prevState) => [...prevState, itemToDo]);
   };
 
@@ -26,7 +23,6 @@ function Header() {
           Adicionar
         </C.Button>
 
-        <Grid></Grid>
         {MultipleItemTodo.map((itemValue) => (
           <GridItem key={itemValue} item={itemValue} />
         ))}

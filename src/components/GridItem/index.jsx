@@ -9,7 +9,7 @@ function GridItem(props) {
       <C.Container>
         <C.Input type="checkbox" />
         <C.Label>{props.item}</C.Label>
-        <C.Svg>Lixeira</C.Svg>
+        <C.Svg>X</C.Svg>
       </C.Container>
     </>
   );

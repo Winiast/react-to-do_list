@@ -18,10 +18,10 @@ export const Container = styled.div`
     box-sizing: border-box;
     padding: 15px;
     width: 100%;
-    text-size-adjust: 60%;
 
     Input {
       width: 30px;
+      box-sizing: border-box;
       margin: 15px;
     }
 
@@ -42,4 +42,13 @@ export const Label = styled.label`
   font-weight: 700;
 `;
 
-export const Svg = styled.h3``;
+export const Svg = styled.button`
+  border: 4px solid red;
+  font-size: 1rem;
+  font-weight: 700;
+  padding: 0px;
+  margin: 0px;
+  border-radius: 5px;
+  box-sizing: border-box;
+  padding: 10px;
+`;

@@ -8,12 +8,18 @@ export const Container = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  place-content: center;
 
   @media (max-width: 768px) {
-    display: grid;
-    place-content: center;
-    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+
+    h1 {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+    }
   }
 `;
 
