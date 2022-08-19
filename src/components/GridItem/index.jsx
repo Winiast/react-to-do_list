@@ -3,16 +3,16 @@ import * as C from "./styles";
 
 // import { Container } from './styles';
 
-function Header() {
+function GridItem(props) {
   return (
     <>
       <C.Container>
-        <C.Label>Lista de Objetivos</C.Label>
-        <C.Input></C.Input>
-        <C.Button>Adicionar</C.Button>
+        <C.Input type="checkbox" />
+        <C.Label>{props.item}</C.Label>
+        <C.Svg>Lixeira</C.Svg>
       </C.Container>
     </>
   );
 }
 
-export default Header;
+export default GridItem;
