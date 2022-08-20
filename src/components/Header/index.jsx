@@ -7,7 +7,11 @@ function Header() {
   const [MultipleItemTodo, setMultipleItemTodo] = useState([]);
 
   const handleButtonClick = () => {
-    setMultipleItemTodo((prevState) => [...prevState, itemToDo]);
+    if (!itemToDo.trim()) {
+      alert("Este campo não pode ser vazio");
+    } else {
+      setMultipleItemTodo((prevState) => [...prevState, itemToDo]);
+    }
   };
 
   return (

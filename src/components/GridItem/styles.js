@@ -42,13 +42,10 @@ export const Label = styled.label`
   font-weight: 700;
 `;
 
-export const Svg = styled.button`
-  border: 4px solid red;
-  font-size: 1rem;
-  font-weight: 700;
-  padding: 0px;
-  margin: 0px;
+export const Svg = styled.svg`
   border-radius: 5px;
+  width: 35px;
+  height: 40px;
   box-sizing: border-box;
   padding: 10px;
 `;
